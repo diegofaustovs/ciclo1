@@ -84,5 +84,17 @@
             <type>war</type>
         </dependency>          
     </dependencies> 
+    
+    <repositories>
+            <repository>
+                  <id>fabricasUniandes</id>
+                  <name>Fabricas uniandes</name>
+                  <releases><enabled>true</enabled></releases>
+                  <snapshots><enabled>true</enabled></snapshots>
+                  <url>http://spl.uniandes.edu.co:8081/nexus/content/repositories/releases/</url>
+                  <layout>default</layout>
+            </repository>
+      </repositories>
+      
     <name>pyme.master.service.subsystem</name>
 </project>
