@@ -4,7 +4,10 @@ define([], function() {
  
 		 'name' : ''
  ,  
-		 'value' : ''
+		 'value' : '',
+                 'id' : '',
+                 'material' : '',
+                 'imagen' : ''
         },
         initialize: function() {
         },

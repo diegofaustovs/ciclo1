@@ -2,9 +2,10 @@ define([], function() {
     App.Model._PymeModel = Backbone.Model.extend({
         defaults: {
  
-		 'name' : ''
- ,  
-		 'description' : ''
+		 'name' : '',  
+		 'description' : '',
+                 'proveedor' :'',
+                 'fecha' : ''
         },
         initialize: function() {
         },

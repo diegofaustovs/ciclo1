@@ -2,9 +2,10 @@ define([], function() {
     App.Model._ClientModel = Backbone.Model.extend({
         defaults: {
  
-		 'name' : ''
- ,  
-		 'cc' : ''
+		 'name' : '',  
+		 'cc' : '',
+                 'direccion' : '',
+                 'telefono' : ''
         },
         initialize: function() {
         },
