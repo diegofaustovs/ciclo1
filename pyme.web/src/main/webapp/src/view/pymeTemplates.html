@@ -6,7 +6,9 @@
     <tr>
 		 <th>name</th>
 		 <th>description</th>
-    <th>Actions</th>
+                 <th>proveedor</th>
+                 <th>fecha</th>
+                 <th>Actions</th>
     </tr>
     </thead>
     <tbody>
@@ -15,7 +17,7 @@
 		<td><%= htmlEncode(pyme.getDisplay('name')) %></td>
 		<td><%= htmlEncode(pyme.getDisplay('description')) %></td>
                 <td><%= htmlEncode(pyme.getDisplay('proveedor')) %></td>
-                <td><%= htmlEmcode(pyme.getDisplay('proveedor')) %></td>
+                <td><%= htmlEmcode(pyme.getDisplay('fecha')) %></td>
     <td>
     <% if(showEdit) {%>
     <a onclick="Backbone.trigger('<%= componentId %>-pyme-edit',{id:<%= pyme.id %>}); return false" >Edit</a> |

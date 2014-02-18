@@ -16,6 +16,7 @@ define(['model/pymeModel'], function(pymeModel) {
             Backbone.on(this.componentId + '-' + 'pyme-create', function(params) {
                 self.create(params);
             });
+            
             Backbone.on(this.componentId + '-' + 'pyme-list', function(params) {
                 self.list(params);
             });
@@ -126,7 +127,7 @@ define(['model/pymeModel'], function(pymeModel) {
                 this.currentPymeModel.set(model);
                 this.currentPymeModel.save({},
                         {
-                            success: function(model) {
+                            success: function() {
                                 Backbone.trigger(self.componentId + '-' + 'post-pyme-save', {model: self.currentPymeModel});
                             },
                             error: function(error) {
